@@ -77,6 +77,7 @@ Pretrained models are available for download:
 ### Test Datasets
 - Quick Draw: 20 randomly selected images (resized to 40×40 pixels, 20 dynamic frames)
 <img width="7183" height="913" alt="a1" src="https://github.com/user-attachments/assets/38b5c11f-23e7-4876-852e-a3d46cbdd478" />
+
 - Fashion MNIST: 20 randomly selected grayscale images (resized to 40×40 pixels)
 - Measured Data: Dynamic "westlake" target (minimum line width 20 μm, 780 nm laser source)
 
