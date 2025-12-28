@@ -43,7 +43,7 @@ TCWD consists of three core stages:
 
 2. **Prior Learning (Spatial Domain)**: Trains a complementary diffusion model to preserve structural integrity and suppress artifacts in the spatial domain.
 3. **Iterative Reconstruction**: Unfolds snapshot measurements into multi-frame frequency-domain data, integrates dual-domain priors into HIO-based phase retrieval, and applies real-space correction for stability.
-<img width="10642" height="12333" alt="流程图定稿4 15改(1)" src="https://github.com/user-attachments/assets/e4da04bb-0db5-44f9-a7e4-4bfcd01ab8b9" />
+<img width="10642" height="12333" alt="p2" src="https://github.com/user-attachments/assets/34c96d94-422f-42ae-a568-d7415382ca18" />
 
 ## Requirements and Dependencies
 
@@ -167,7 +167,7 @@ python PCsampling_demo.py
 |FDTC (Frequency Priors)|28.15/0.974|26.25/0.946|
 |TCWD (Wavelet Priors Only)|30.12/0.977|26.68/0.951|
 |TCWD (Dual-Domain Priors)|31.13/0.985|27.45/0.952|
-![Uploading 5.png…]()
+<img width="11271" height="4817" alt="5" src="https://github.com/user-attachments/assets/264a26f3-61ff-4884-a4af-bfed560087c1" />
 
 ## Target Size Analysis
 TCWD maintains superior performance across different target sizes:
