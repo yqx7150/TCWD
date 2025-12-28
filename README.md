@@ -1,36 +1,35 @@
-# TCWD 完整技术文档
+# TCWD   
 
-# TCWD
+Paper: TCWD: Temporal compressive coherent diffraction imaging enhanced by weighted wavelet domain diffusion model   
 
-Paper: TCWD: Temporal compressive coherent diffraction imaging enhanced by weighted wavelet domain diffusion model
+Authors: Dingxiang Yuanⁱᵃ, Rundong Gongⁱᵇ, Yaolong Faᶜ, Xianghong Zouᵈ, Tianshui Yuᵉ, Wenbo Wanᵃᶠ, Qiegen Liuᵃᶠ   
 
-Authors: Dingxiang Yuanⁱᵃ, Rundong Gongⁱᵇ, Yaolong Faᶜ, Xianghong Zouᵈ, Tianshui Yuᵉ, Wenbo Wanᵃᶠ⁎, Qiegen Liuᵃᶠ⁎
-ⁱThese authors contributed equally to this work
-ᵃSchool of Information Engineering, Nanchang University, Nanchang 330031, China
-ᵇSchool of Mathematics and Computer Sciences, Nanchang University, Nanchang 330031, China
-ᶜJi Luan Academy, Nanchang University, Nanchang 330031, China
-ᵈSchool of Advanced Manufactory, Nanchang University, Nanchang 330031, China
-ᵉNanchang Yijing Information Technology Co., Ltd, Nanchang 330108, China
-ᶠJiangxi Provincial Key Laboratory of Advanced Signal Processing and Intelligent Communications, Nanchang University, Nanchang 330031, China
+ⁱThese authors contributed equally to this work   
+ᵃSchool of Information Engineering, Nanchang University, Nanchang 330031, China   
+ᵇSchool of Mathematics and Computer Sciences, Nanchang University, Nanchang 330031, China   
+ᶜJi Luan Academy, Nanchang University, Nanchang 330031, China   
+ᵈSchool of Advanced Manufactory, Nanchang University, Nanchang 330031, China   
+ᵉNanchang Yijing Information Technology Co., Ltd, Nanchang 330108, China   
+ᶠJiangxi Provincial Key Laboratory of Advanced Signal Processing and Intelligent Communications, Nanchang University, Nanchang 330031, China   
 
-Journal: Optics Communications 597 (2025) 132587
-DOI: https://doi.org/10.1016/j.optcom.2025.132587
-Corrigendum: https://doi.org/10.1016/j.optcom.2025.132703
-Date: October 24, 2025 (Accepted)
+Journal: Optics Communications 597 (2025) 132587   
+DOI: https://doi.org/10.1016/j.optcom.2025.132587   
+Corrigendum: https://doi.org/10.1016/j.optcom.2025.132703   
+Date: October 24, 2025 (Accepted)   
 
 ## Abstract
 
-Temporal compressive coherent diffraction imaging (TC-CDI) is a lensless imaging technique that enables dynamic process visualization by compressive sampling in the frequency domain. While diffusion models improve reconstruction quality, they struggle with complex targets. We propose TCWD, which integrates a weighted wavelet domain diffusion model to balance high- and low-frequency components, and a spatial domain diffusion model to reduce distortions. These dual-domain learned priors guide the iterative hybrid input-output (HIO) algorithm, enhancing reconstruction accuracy while maintaining interpretability. Validated on Fashion MNIST, Quick Draw datasets, and measured data, TCWD achieves superior detail recovery, artifact suppression, and structural integrity with an average PSNR of 28.14 dB and SSIM of 0.970.
+Temporal compressive coherent diffraction imaging (TC-CDI) is a lensless imaging technique that enables dynamic process visualization by compressive sampling in the frequency domain. While diffusion models improve reconstruction quality, they struggle with complex targets. We propose TCWD, which integrates a weighted wavelet domain diffusion model to balance high- and low-frequency components, and a spatial domain diffusion model to reduce distortions. These dual-domain learned priors guide the iterative hybrid input-output (HIO) algorithm, enhancing reconstruction accuracy while maintaining interpretability. Validated on Fashion MNIST, Quick Draw datasets, and measured data, TCWD achieves superior detail recovery, artifact suppression, and structural integrity with an average PSNR of 28.14 dB and SSIM of 0.970.   
 
 ## Keywords
 
-Coherent diffraction imaging, Prior learning, Weighted wavelet domain, Image reconstruction, Generative diffusion model
+Coherent diffraction imaging, Prior learning, Weighted wavelet domain, Image reconstruction, Generative diffusion model   
 
 ## Key Contributions
 
-- Proposes a cross-domain prior extraction strategy combining Fourier transform, wavelet decomposition, and weighting, enhancing data sparsity and feature extraction in the frequency domain.
-- Develops a joint prior-constrained reconstruction method that recovers sparsely sampled spectral information and high-quality spatial-domain images.
-- Outperforms state-of-the-art methods (TC-CDI, FDTC) in handling complex dynamic targets, with robust performance across simulated and real-world experimental data.
+- Proposes a cross-domain prior extraction strategy combining Fourier transform, wavelet decomposition, and weighting, enhancing data sparsity and feature extraction in the frequency domain.   
+- Develops a joint prior-constrained reconstruction method that recovers sparsely sampled spectral information and high-quality spatial-domain images.   
+- Outperforms state-of-the-art methods (TC-CDI, FDTC) in handling complex dynamic targets, with robust performance across simulated and real-world experimental data.   
 
 ## Method Overview
 
@@ -41,16 +40,16 @@ TCWD consists of three core stages:
 
 ## Requirements and Dependencies
 
-Python==3.8
-Pytorch==1.7.0
-tensorflow==2.4.0
-torchvision==0.8.0
-tensorboard==2.7.0
-scipy==1.7.3
-numpy==1.19.5
-ninja==1.10.2
-matplotlib==3.5.1
-jax==0.2.26
+Python==3.8   
+Pytorch==1.7.0   
+tensorflow==2.4.0   
+torchvision==0.8.0   
+tensorboard==2.7.0   
+scipy==1.7.3   
+numpy==1.19.5   
+ninja==1.10.2   
+matplotlib==3.5.1   
+jax==0.2.26   
 
 ## Checkpoints
 
@@ -87,6 +86,7 @@ Pretrained models are available for download:
 |Momentum|0.999|Exponential moving average for parameters|
 |Maximum Gradient Magnitude|1.0|Gradient clipping threshold|
 |Signal-to-Noise Ratio (SNR)|0.075|Dimensionless ratio for reverse diffusion|
+
 ### 1. Weighted Wavelet Domain Model Training
 1. Modify training dataset path in `Code/TCWD/Iterative_Reconstruction/datasets_wavelet.py`
 2. Run training command in `Code/TCWD/Iterative_Reconstruction` directory:
@@ -140,9 +140,7 @@ python PCsampling_demo.py
 |Quick Draw|TC-CDI|25.38|0.950|
 |Quick Draw|FDTC|26.43|0.956|
 |Quick Draw|TCWD|28.14|0.970|
-|Fashion MNIST|TC-CDI|24.88|0.931|
-|Fashion MNIST|FDTC|26.25|0.946|
-|Fashion MNIST|TCWD|27.45|0.952|
+
 ### Key Highlights
 - Maximum PSNR: 34.96 dB (Quick Draw dataset)
 - Maximum SSIM: 0.992 (Quick Draw dataset)
@@ -158,6 +156,7 @@ python PCsampling_demo.py
 |FDTC (Frequency Priors)|28.15/0.974|26.25/0.946|
 |TCWD (Wavelet Priors Only)|30.12/0.977|26.68/0.951|
 |TCWD (Dual-Domain Priors)|31.13/0.985|27.45/0.952|
+
 ## Target Size Analysis
 TCWD maintains superior performance across different target sizes:
 - 30×30 pixels: Best structural integrity and lowest noise
@@ -168,4 +167,3 @@ TCWD maintains superior performance across different target sizes:
 This study was supported by:
 - National Natural Science Foundation of China (No. U24A20304)
 - Jiangxi Provincial Natural Science Foundation (Nos. 20242BAB20040, 20252BAC240032, 20242BCC32016)
-> （注：文档部分内容可能由 AI 生成）
