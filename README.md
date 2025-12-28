@@ -31,6 +31,7 @@ Coherent diffraction imaging, Prior learning, Weighted wavelet domain, Image rec
 
 - Proposes a cross-domain prior extraction strategy combining Fourier transform, wavelet decomposition, and weighting, enhancing data sparsity and feature extraction in the frequency domain.
 <img width="13788" height="3171" alt="jiaquan" src="https://github.com/user-attachments/assets/8f40adec-8682-41cd-bdf3-2960940a9c0d" />
+
 - Develops a joint prior-constrained reconstruction method that recovers sparsely sampled spectral information and high-quality spatial-domain images.   
 - Outperforms state-of-the-art methods (TC-CDI, FDTC) in handling complex dynamic targets, with robust performance across simulated and real-world experimental data.   
 
