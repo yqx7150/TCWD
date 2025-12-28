@@ -40,6 +40,7 @@ Coherent diffraction imaging, Prior learning, Weighted wavelet domain, Image rec
 TCWD consists of three core stages:
 1. **Prior Learning (Weighted Wavelet Domain)**: Transforms spatial data to frequency domain via Fourier transform, decomposes into 8 sub-bands with DWT, and applies weighting to balance frequency components. Trains a VE-SDE based diffusion model to learn frequency-domain priors.
 <img width="1806" height="594" alt="27cfea41e24c07c87aa1c73a2bf775dc" src="https://github.com/user-attachments/assets/fda6ecb8-69b1-4614-9d29-3418dfb29a6b" />
+
 2. **Prior Learning (Spatial Domain)**: Trains a complementary diffusion model to preserve structural integrity and suppress artifacts in the spatial domain.
 3. **Iterative Reconstruction**: Unfolds snapshot measurements into multi-frame frequency-domain data, integrates dual-domain priors into HIO-based phase retrieval, and applies real-space correction for stability.
 <img width="10642" height="12333" alt="流程图定稿4 15改(1)" src="https://github.com/user-attachments/assets/e4da04bb-0db5-44f9-a7e4-4bfcd01ab8b9" />
