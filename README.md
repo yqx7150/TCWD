@@ -1,8 +1,8 @@
 # TCWD   
 
-Paper: TCWD: Temporal compressive coherent diffraction imaging enhanced by weighted wavelet domain diffusion model   
+**Paper**: TCWD: Temporal compressive coherent diffraction imaging enhanced by weighted wavelet domain diffusion model   
 
-Authors: Dingxiang Yuanⁱᵃ, Rundong Gongⁱᵇ, Yaolong Faᶜ, Xianghong Zouᵈ, Tianshui Yuᵉ, Wenbo Wanᵃᶠ, Qiegen Liuᵃᶠ   
+**Authors**: Dingxiang Yuanⁱᵃ, Rundong Gongⁱᵇ, Yaolong Faᶜ, Xianghong Zouᵈ, Tianshui Yuᵉ, Wenbo Wanᵃᶠ, Qiegen Liuᵃᶠ   
 
 ⁱThese authors contributed equally to this work   
 ᵃSchool of Information Engineering, Nanchang University, Nanchang 330031, China   
@@ -12,9 +12,9 @@ Authors: Dingxiang Yuanⁱᵃ, Rundong Gongⁱᵇ, Yaolong Faᶜ, Xianghong Zou�
 ᵉNanchang Yijing Information Technology Co., Ltd, Nanchang 330108, China   
 ᶠJiangxi Provincial Key Laboratory of Advanced Signal Processing and Intelligent Communications, Nanchang University, Nanchang 330031, China   
 
-Journal: Optics Communications 597 (2025) 132587   
-DOI: https://doi.org/10.1016/j.optcom.2025.132587   
-Corrigendum: https://doi.org/10.1016/j.optcom.2025.132703   
+**Journal**: Optics Communications 597 (2025) 132587   
+**DOI**: https://doi.org/10.1016/j.optcom.2025.132587   
+**Corrigendum**: https://doi.org/10.1016/j.optcom.2025.132703   
 Date: October 24, 2025 (Accepted)   
 
 ## Abstract
