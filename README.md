@@ -1,4 +1,4 @@
-<img width="13788" height="3171" alt="jiaquan" src="https://github.com/user-attachments/assets/2d77e11f-72ec-4f06-8fc6-02c868253b8f" /># TCWD   
+# TCWD   
 
 Paper: TCWD: Temporal compressive coherent diffraction imaging enhanced by weighted wavelet domain diffusion model   
 
