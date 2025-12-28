@@ -76,6 +76,7 @@ Pretrained models are available for download:
 
 ### Test Datasets
 - Quick Draw: 20 randomly selected images (resized to 40×40 pixels, 20 dynamic frames)
+
 <img width="7183" height="913" alt="a1" src="https://github.com/user-attachments/assets/38b5c11f-23e7-4876-852e-a3d46cbdd478" />
 
 - Fashion MNIST: 20 randomly selected grayscale images (resized to 40×40 pixels)
@@ -144,22 +145,28 @@ python PCsampling_demo.py
 
 ### Quantitative Performance (Average Values)
 
+<img width="9192" height="7438" alt="Fig  6" src="https://github.com/user-attachments/assets/fa123767-598f-40d4-b3f2-9d5b55ffd4f9" />
+
 |Dataset|Method|PSNR (dB)|SSIM|
 |---|---|---|---|
 |Quick Draw|TC-CDI|25.38|0.950|
 |Quick Draw|FDTC|26.43|0.956|
 |Quick Draw|TCWD|28.14|0.970|
-<img width="9192" height="7438" alt="Fig  6" src="https://github.com/user-attachments/assets/fa123767-598f-40d4-b3f2-9d5b55ffd4f9" />
 
 ### Key Highlights
+<img width="9192" height="7446" alt="2" src="https://github.com/user-attachments/assets/f1d80bff-c865-4105-ab2e-843dac918dc3" />
+
 - Maximum PSNR: 34.96 dB (Quick Draw dataset)
 - Maximum SSIM: 0.992 (Quick Draw dataset)
-<img width="9192" height="7446" alt="2" src="https://github.com/user-attachments/assets/f1d80bff-c865-4105-ab2e-843dac918dc3" />
-- Superior artifact suppression and detail preservation on complex dynamic targets
-- Stable performance on measured data (complete "westlake" target reconstruction)
+
 <img width="9125" height="4792" alt="4" src="https://github.com/user-attachments/assets/1a3792a5-3804-4b79-b68b-d868f3824a5c" />
 
+- Superior artifact suppression and detail preservation on complex dynamic targets
+- Stable performance on measured data (complete "westlake" target reconstruction)
+
 ## Ablation Study
+
+<img width="11271" height="4817" alt="5" src="https://github.com/user-attachments/assets/264a26f3-61ff-4884-a4af-bfed560087c1" />
 
 |Method Configuration|Quick Draw (PSNR/SSIM)|Fashion MNIST (PSNR/SSIM)|
 |---|---|---|
@@ -168,14 +175,15 @@ python PCsampling_demo.py
 |FDTC (Frequency Priors)|28.15/0.974|26.25/0.946|
 |TCWD (Wavelet Priors Only)|30.12/0.977|26.68/0.951|
 |TCWD (Dual-Domain Priors)|31.13/0.985|27.45/0.952|
-<img width="11271" height="4817" alt="5" src="https://github.com/user-attachments/assets/264a26f3-61ff-4884-a4af-bfed560087c1" />
 
 ## Target Size Analysis
+
+<img width="7538" height="8300" alt="Fig  11" src="https://github.com/user-attachments/assets/fc21006b-c7b9-4d8b-b847-6fcc4bf2e579" />
+
 TCWD maintains superior performance across different target sizes:
 - 30×30 pixels: Best structural integrity and lowest noise
 - 60×60 pixels: Outperforms TC-CDI/FDTC by 3.58 dB (PSNR) and 0.045 (SSIM)
 - Scalable to large complex targets with minimal quality degradation
-<img width="7538" height="8300" alt="Fig  11" src="https://github.com/user-attachments/assets/fc21006b-c7b9-4d8b-b847-6fcc4bf2e579" />
 
 ## Funding
 This study was supported by:
